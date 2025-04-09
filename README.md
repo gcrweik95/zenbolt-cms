@@ -25,7 +25,7 @@
 	<li>Configure the filesystem in config/filesystem.php, use 'public' as default value if none</li>
 	<li>
 		Run:
-		<pre>composer require hellotreedigital/cms</pre>
+		<pre>composer require zenbolt/cms</pre>
 	</li>
 	<li>
 		To create the admin:
@@ -40,24 +40,8 @@
 		<pre>php artisan vendor:publish --tag=cms_config --force</pre>
 	</li>
 	<li>
-		CMS intouch config:
-		<pre>php artisan vendor:publish --tag=cms_intouch_config --force</pre>
-	</li>
-	<li>
-		CMS ripply config:
-		<pre>php artisan vendor:publish --tag=cms_ripply_config --force</pre>
-	</li>
-	<li>
-		CMS scratch & courage config:
-		<pre>php artisan vendor:publish --tag=cms_scratch_and_courage_config --force</pre>
-	</li>
-	<li>
-		CMS imaginelabs. config:
-		<pre>php artisan vendor:publish --tag=cms_imagine_labs_config --force</pre>
-	</li>
-	<li>
-		CMS Purple Brains config:
-		<pre>php artisan vendor:publish --tag=cms_purple_brains_config --force</pre>
+		CMS sheefra config:
+		<pre>php artisan vendor:publish --tag=cms_sheefra_config --force</pre>
 	</li>
 	<li>
 		CMS routes:
