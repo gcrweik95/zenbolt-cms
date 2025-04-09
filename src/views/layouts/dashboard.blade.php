@@ -16,15 +16,15 @@
             @if (!$group['icon'] && !$group['title'])
             @foreach($group['pages'] as $page)
             @if (!$page['display_name_plural']) @continue @endif
-            <li class="position-relative {{ request()->is(cozenbolt.otree.cms_route_prefix') . '/' . $page['route']) || request()->is(config('zenbolt.cms_route_prefix') . '/' . $page['route'] . '/*') ? 'active' : '' }}">
-                <a class="d-block p-3" href="{{ urlzenbolt.ellotree.cms_route_prefix') . '/' . $page['route']) }}" title="{{ $page['display_name_plural'] }}">
+            <li class="position-relative {{ request()->is(config('zenbolt.cms_route_prefix') . '/' . $page['route']) || request()->is(config('zenbolt.cms_route_prefix') . '/' . $page['route'] . '/*') ? 'active' : '' }}">
+                <a class="d-block p-3" href="{{ url(config('zenbolt.cms_route_prefix') . '/' . $page['route']) }}" title="{{ $page['display_name_plural'] }}">
                     <i class="text-center mr-2 fa {{ $page['icon'] }}" aria-hidden="true"></i>
                     {{ $page['display_name_plural'] }}
                 </a>
             </li>
             @endforeach
             @else
-            <li class="position-relative menu-dropdown-wrapper @foreach($group['pages'] as $page){{ request()->is(czenbolt.lotree.cms_route_prefix') . '/' . $page['route'] . '*') ? 'active' : '' }}@endforeach">
+            <li class="position-relative menu-dropdown-wrapper @foreach($group['pages'] as $page){{ request()->is(config('zenbolt.cms_route_prefix') . '/' . $page['route'] . '*') ? 'active' : '' }}@endforeach">
                 <a class="d-block p-3" title="{{ $group['title'] }}">
                     <i class="text-center mr-2 fa {{ $group['icon'] }}" aria-hidden="true"></i>
                     {{ $group['title'] }}
@@ -33,7 +33,7 @@
                 <div class="menu-dropdown pl-5">
                     @foreach($group['pages'] as $page)
                     @if (!$page['display_name_plural']) @continue @endif
-                    <a class="px-3 py-1" href="{{ zenbolt.('zenbolt.cms_route_prefix') . '/' . $page['route']) }}" title="{{ $page['display_name_plural'] }}">{{ $page['display_name_plural'] }}</a>
+                    <a class="px-3 py-1" href="{{ url(config('zenbolt.cms_route_prefix') . '/' . $page['route']) }}" title="{{ $page['display_name_plural'] }}">{{ $page['display_name_plural'] }}</a>
                     @endforeach
                 </div>
             </li>

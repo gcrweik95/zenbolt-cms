@@ -4,7 +4,7 @@ namespace Zenbolt\Cms\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Zenbolt\s\CmsPage;
+use Zenbolt\Cms\Models\CmsPage;
 use Zenbolt\Cms\Models\Language;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -181,7 +181,7 @@ class CmsPageController extends Controller
 
             if (!$field['nullable']) $validation_rules[$field['name']] .= 'required|';
             if (isset($field['unique']) && $field['unique']) $validation_rules[$field['name']] .= 'unique:' . $page['database_table'] . '|';
-            if ($field['form_field'] == 'image') $validation_rules[$field['name']] .= 'image|';
+            if ($field['form_field'] == 'image') $validation_rules[$field['name']] .= 'mimes:jpeg,png,jpg,gif,svg|';
             if ($field['form_field'] == 'multiple images') $validation_rules[$field['name']] .= 'array|';
             if ($field['form_field'] == 'password with confirmation') $validation_rules[$field['name']] .= 'confirmed|';
             if ($field['form_field'] == 'number') $validation_rules[$field['name']] .= 'numeric|';
@@ -346,7 +346,7 @@ class CmsPageController extends Controller
             if (!$field['nullable'] && ($field['form_field'] != 'image' && $field['form_field'] != 'file' && $field['form_field'] != 'password with confirmation')) $validation_rules[$field['name']] .= 'required|';
             if (!$field['nullable'] && ($field['form_field'] == 'image' || $field['form_field'] == 'file')) $validation_rules[$field['name']] .= 'required_with:remove_file_' . $field['name'] . '|';
             if (isset($field['unique']) && $field['unique']) $validation_rules[$field['name']] .= 'unique:' . $database_table . ',' . $field['name'] . ',' . $id . '|';
-            if ($field['form_field'] == 'image') $validation_rules[$field['name']] .= 'image|';
+            if ($field['form_field'] == 'image') $validation_rules[$field['name']] .= 'mimes:jpeg,png,jpg,gif,svg|';
             if ($field['form_field'] == 'password with confirmation') $validation_rules[$field['name']] .= 'confirmed|';
             if ($field['form_field'] == 'number') $validation_rules[$field['name']] .= 'numeric|';
             if ($field['form_field'] == 'number' && $field['nullable']) $validation_rules[$field['name']] .= 'nullable|';

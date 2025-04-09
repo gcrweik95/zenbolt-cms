@@ -28,7 +28,7 @@ class AdminsController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'image' => 'image',
+            'image' => 'mimes:jpeg,png,jpg,gif,svg',
             'email' => 'required|unique:admins',
             'password' => 'required|confirmed',
             'admin_role_id' => 'required',

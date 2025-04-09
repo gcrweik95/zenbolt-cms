@@ -4,7 +4,7 @@ namespace Zenbolt\Cms\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Zenbolt\s\AdminRolePermission;
+use Zenbolt\Cms\Models\AdminRolePermission;
 use Zenbolt\Cms\Models\AdminRole;
 use Zenbolt\Cms\Models\CmsPage;
 

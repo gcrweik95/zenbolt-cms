@@ -71,7 +71,7 @@ class CmsController extends Controller
         $request->validate([
             'name' => 'required',
             'password' => 'confirmed',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
+            'image' => 'mimes:jpeg,png,jpg,gif,svg',
         ]);
 
         $admin = Auth::guard('admin')->user();

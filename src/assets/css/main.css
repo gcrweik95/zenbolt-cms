@@ -368,9 +368,11 @@ html body nav.main .header {
 }
 
 html body nav.main .header img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width:75%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  margin:auto;
 }
 
 html body nav.main ul {
@@ -953,14 +955,14 @@ html body .form-buttons-wrapper-fixed.show {
 }
 
 .btn.btn-primary {
-  color: inherit;
+  color: #fff !important;
   background-color: #61b15a;
   border-color: #61b15a;
 }
 
 .btn.btn-primary:active {
-  background-color: #61b15a !important;
-  border-color: #61b15a !important;
+  background-color: #000 !important;
+  border-color: #000 !important;
 }
 
 .btn.btn-secondary {
