@@ -28,6 +28,10 @@
 		<pre>composer require zenbolt/cms</pre>
 	</li>
 	<li>
+		To make sure the project is well migrated:
+		<pre>php artisan migrate</pre>
+	</li>
+	<li>
 		To create the admin:
 		<pre>php artisan admin:create --name=example --email=example@example.com --password=123</pre>
 	</li>
