@@ -18,6 +18,7 @@ class ApisController extends Controller
             'custom_validation.*.constraint' => 'required',
             'custom_validation.*.value' => 'required',
         ]);
+        
 
         if ($request['locale']) App::setLocale($request['locale']);
 
