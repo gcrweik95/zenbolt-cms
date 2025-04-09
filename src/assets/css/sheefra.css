@@ -1,0 +1,89 @@
+::-moz-selection {
+  background: #4cd659 !important;
+}
+::selection {
+  background: #4cd659 !important;
+}
+html body #login {
+  background-color: #4cd659;
+  background-image: linear-gradient(to right, #4cd659, #000);
+}
+html body #content .header-bg {
+  background-color: #4cd659;
+  background-image: linear-gradient(to right, #4cd659, #000);
+}
+html body nav.main ul li:before {
+  background: #1d1d1d;
+}
+.breadcrumbs {
+  color: #fff;
+}
+html body .user-info span {
+  color: #fff;
+}
+html body #login .card img {
+  max-width: 200px;
+}
+footer {
+  color: #fff;
+}
+.btn.btn-primary {
+  background-image: linear-gradient(to right, #4cd659, #000);
+  color: #fff !important;
+  border-color: #4cd659;
+}
+html body .checkbox-wrapper div {
+  border-color: #000;
+}
+html
+  body
+  #content
+  .datatable-wrapper
+  .dataTables_filter
+  .paginate_button.current,
+html
+  body
+  #content
+  .datatable-wrapper
+  .dataTables_paginate
+  .paginate_button.current {
+  background: #000;
+  border-color: #000;
+  color: #fff !important;
+}
+html
+  body
+  #content
+  .datatable-wrapper
+  .dataTables_filter
+  .paginate_button.previous:before,
+html
+  body
+  #content
+  .datatable-wrapper
+  .dataTables_paginate
+  .paginate_button.previous:before {
+  border-right-color: #000;
+}
+html
+  body
+  #content
+  .datatable-wrapper
+  .dataTables_filter
+  .paginate_button.next:before,
+html
+  body
+  #content
+  .datatable-wrapper
+  .dataTables_paginate
+  .paginate_button.next:before {
+  border-right-color: #000;
+}
+.form-control:focus {
+  border-color: #4cd659;
+  box-shadow: 0 0 0 0.2rem #4cd65940;
+}
+html body .checkbox-wrapper input:checked + div {
+  border-color: #a7206b;
+  background-color: #4cd659;
+}

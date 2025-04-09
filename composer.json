@@ -1,0 +1,27 @@
+{
+  "name": "zenbolt/cms",
+  "description": "Zenbolt CMS",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Zenbolt\\Cms\\": "src",
+      "Zenbolt\\Cms\\Seeds\\": "src/seeds",
+      "Zenbolt\\Cms\\Middlewares\\": "src/middlewares",
+      "Zenbolt\\Cms\\Models\\": "src/models"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zenbolt\\Cms\\Providers\\CmsServiceProvider"
+      ]
+    }
+  },
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "doctrine/dbal": "^3.0 || ^4.0",
+    "astrotomic/laravel-translatable": "*",
+    "tinify/tinify": "*"
+  }
+}
