@@ -5,7 +5,6 @@
   "autoload": {
     "psr-4": {
       "Zenbolt\\Cms\\": "src",
-      "Zenbolt\\Cms\\Controllers": "src/Controllers",
       "Zenbolt\\Cms\\Seeds\\": "src/seeds",
       "Zenbolt\\Cms\\Middlewares\\": "src/middlewares",
       "Zenbolt\\Cms\\Models\\": "src/models"
