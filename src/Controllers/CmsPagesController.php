@@ -1,6 +1,6 @@
 <?php
 
-namespace Zenbolt\ollers;
+namespace Zenbolt\Cms\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
