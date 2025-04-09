@@ -6,7 +6,7 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Favicon -->zenbolt.
+	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="{{ url(config('zenbolt.favicon.apple-icon-57x57')) }}">
 	<link rel="apple-touch-icon" sizes="60x60" href="{{ url(config('zenbolt.favicon.apple-icon-60x60')) }}">
 	<link rel="apple-touch-icon" sizes="72x72" href="{{ url(config('zenbolt.favicon.apple-icon-72x72')) }}">
@@ -45,10 +45,7 @@
 	@yield('main-content')
 
 	<script>
-		var CKEditorColors = {
-			!!config('zenbolt.ckeditor') && config('zenbolt.ckeditor.colors') && count(config('zenbolt.ckeditor.colors')) ? '"'.implode(',', config('zenbolt.ckeditor.colors')).
-			'"' : 'null'!!
-		};
+		var CKEditorColors = {!! config('zenbolt.ckeditor') && config('zenbolt.ckeditor.colors') && count(config('zenbolt.ckeditor.colors')) ? '"' . implode(',', config('zenbolt.ckeditor.colors')) . '"' : 'null' !!};
 	</script>
 
 	@foreach(config('zenbolt.cms_assets.scripts') as $path)
