@@ -41,22 +41,19 @@
 <body class="m-0">
 
 	<div id="loader">
-		@if (config('zenbolt.loading'))
-		<img src="{{ url(config('zenbolt.loading')) }}">
-		@endif
+        @if (config('zenbolt.loading'))
+            <img src="{{ url(config('zenbolt.loading')) }}">
+        @endif
 	</div>
 
-	@yield('main-content')
+    @yield('main-content')
 
 	<script>
-		var CKEditorColors = {
-			!!config('zenbolt.ckeditor') && config('zenbolt.ckeditor.colors') && count(config('zenbolt.ckeditor.colors')) ? '"'.implode(',', config('zenbolt.ckeditor.colors')).
-			'"' : 'null'!!
-		};
+		var CKEditorColors = {!! config('zenbolt.ckeditor') && config('zenbolt.ckeditor.colors') && count(config('zenbolt.ckeditor.colors')) ? '"' . implode(',', config('zenbolt.ckeditor.colors')) . '"' : 'null' !!};
 	</script>
 
 	@foreach(config('zenbolt.cms_assets.scripts') as $path)
-	<script type="text/javascript" src="{{ url($path) }}"></script>
+		<script type="text/javascript" src="{{ url($path) }}"></script>
 	@endforeach
 
 	@yield('scripts')
