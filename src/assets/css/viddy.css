@@ -81,7 +81,7 @@ html
 }
 .form-control:focus {
   border-color: #000;
-  box-shadow: 0 0 0 0.2rem #f4408f;
+  box-shadow: 0 0 0 0.2rem #f4408f54;
 }
 html body .checkbox-wrapper input:checked + div {
   border-color: #a7206b;
