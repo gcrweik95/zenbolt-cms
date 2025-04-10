@@ -28,41 +28,41 @@ return [
 
     'cms_assets' => [
 
-    	/*
+        /*
 	    |--------------------------------------------------------------------------
 	    | Used styles. You can add or remove any
 	    |--------------------------------------------------------------------------
 	    */
 
-	    'styles' => [
-	    	'asset?path=css/font-awesome/css/font-awesome.min.css',
-	    	'asset?path=css/bootstrap.min.css',
-	    	'asset?path=css/dataTables.min.css',
-	    	'asset?path=css/select2.min.css',
+        'styles' => [
+            'asset?path=css/font-awesome/css/font-awesome.min.css',
+            'asset?path=css/bootstrap.min.css',
+            'asset?path=css/dataTables.min.css',
+            'asset?path=css/select2.min.css',
             'asset?path=css/main.min.css',
-            'asset?path=css/intouch.css'
-	    ],
+            'asset?path=css/viddy.css'
+        ],
 
 
-    	/*
+        /*
 	    |--------------------------------------------------------------------------
 	    | Used scripts. You can add or remove any
 	    |--------------------------------------------------------------------------
 	    */
 
-	    'scripts' => [
-	    	'asset?path=js/jquery.min.js',
-	    	'asset?path=js/jquery-ui.min.js',
-	    	'asset?path=js/dataTables.min.js',
-	    	'asset?path=js/dataTables.buttons.min.js',
-	    	'asset?path=js/jszip.min.js',
-	    	'asset?path=js/pdfmake.min.js',
-	    	'asset?path=js/vfs_fonts.js',
-	    	'asset?path=js/buttons.html5.min.js',
-	    	'asset?path=js/select2.min.js',
-	    	'https://cdn.ckeditor.com/4.6.2/standard-all/ckeditor.js',
-	    	'asset?path=js/main.js',
-	    ],
+        'scripts' => [
+            'asset?path=js/jquery.min.js',
+            'asset?path=js/jquery-ui.min.js',
+            'asset?path=js/dataTables.min.js',
+            'asset?path=js/dataTables.buttons.min.js',
+            'asset?path=js/jszip.min.js',
+            'asset?path=js/pdfmake.min.js',
+            'asset?path=js/vfs_fonts.js',
+            'asset?path=js/buttons.html5.min.js',
+            'asset?path=js/select2.min.js',
+            'https://cdn.ckeditor.com/4.6.2/standard-all/ckeditor.js',
+            'asset?path=js/main.js',
+        ],
     ],
 
 
@@ -73,30 +73,27 @@ return [
     */
 
     'favicon' => [
-        'apple-icon-57x57' => 'asset?path=favicon/apple-icon-57x57.png',
-        'apple-icon-60x60' => 'asset?path=favicon/apple-icon-60x60.png',
-        'apple-icon-72x72' => 'asset?path=favicon/apple-icon-72x72.png',
-        'apple-icon-76x76' => 'asset?path=favicon/apple-icon-76x76.png',
-        'apple-icon-114x114' => 'asset?path=favicon/apple-icon-114x114.png',
-        'apple-icon-120x120' => 'asset?path=favicon/apple-icon-120x120.png',
-        'apple-icon-144x144' => 'asset?path=favicon/apple-icon-144x144.png',
-        'apple-icon-152x152' => 'asset?path=favicon/apple-icon-152x152.png',
-        'apple-icon-180x180' => 'asset?path=favicon/apple-icon-180x180.png',
-        'android-icon-192x192' => 'asset?path=favicon/android-icon-192x192.png',
-        'favicon-32x32' => 'asset?path=favicon/favicon-32x32.png',
-        'favicon-96x96' => 'asset?path=favicon/favicon-96x96.png',
-        'favicon-16x16' => 'asset?path=favicon/favicon-16x16.png',
-        'manifest' => 'asset?path=favicon/manifest.json',
-        'msapplication-TileColor' => '#ffffff',
-        'msapplication-TileImage' => 'asset?path=favicon/ms-icon-144x144.png',
-        'theme-color' => '#ffffff',
+        'apple-icon-57x57' => 'asset?path=favicon/viddy/favicon.ico',
+        'apple-icon-60x60' => 'asset?path=favicon/viddy/favicon.ico',
+        'apple-icon-72x72' => 'asset?path=favicon/viddy/favicon.ico',
+        'apple-icon-76x76' => 'asset?path=favicon/viddy/favicon.ico',
+        'apple-icon-114x114' => 'asset?path=favicon/viddy/favicon.ico',
+        'apple-icon-120x120' => 'asset?path=favicon/viddy/favicon.ico',
+        'apple-icon-144x144' => 'asset?path=favicon/viddy/favicon.ico',
+        'apple-icon-152x152' => 'asset?path=favicon/viddy/favicon.ico',
+        'apple-icon-180x180' => 'asset?path=favicon/viddy/favicon.ico',
+        'android-icon-192x192' => 'asset?path=favicon/viddy/favicon.ico',
+        'favicon-32x32' => 'asset?path=favicon/viddy/favicon.ico',
+        'favicon-96x96' => 'asset?path=favicon/viddy/favicon.ico',
+        'favicon-16x16' => 'asset?path=favicon/viddy/favicon.ico',
+        'msapplication-TileImage' => 'asset?path=favicon/viddy/favicon.ico',
     ],
-    'logo' => 'asset?path=images/intouch-logo.png',
-    'loading' => 'asset?path=images/intouch-logo.png',
-    'footer_slogan' => 'intouchmena',
+    'logo' => 'asset?path=images/viddy-logo.png',
+    'loading' => 'asset?path=images/viddy-logo.png',
+    'footer_slogan' => 'Viddy Production',
     'footer_copyright' => 'V0.1 All Right Reserved.</a>',
-    'tab_title' => 'INTOUCH | CMS',
-    'home_title' => 'INTOUCH CMS',
+    'tab_title' => 'VIDDY | CMS',
+    'home_title' => 'VIDDY CMS',
     'home_content' => '',
 
 

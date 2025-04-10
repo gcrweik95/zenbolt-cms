@@ -48,6 +48,10 @@
 		<pre>php artisan vendor:publish --tag=cms_sheefra_config --force</pre>
 	</li>
 	<li>
+		CMS viddy config:
+		<pre>php artisan vendor:publish --tag=cms_viddy_config --force</pre>
+	</li>
+	<li>
 		CMS routes:
 		<pre>php artisan vendor:publish --tag=cms_routes --force</pre>
 	</li>
@@ -74,5 +78,14 @@
 		<pre>session('ht-preview-mode-request')</pre>
         Code example:
         <pre>$row = auth('admin')->check() && request('ht_preview_mode') ? session('ht-preview-mode-request') : $row = Model::findOrFail($id);</pre>
+	</li>
+</ul>
+
+<h1>If laravel's symlink didn't work on windows, using command prompt (not powershell do the following):</h1>
+<ul>
+	<li>
+	https://laracasts.com/discuss/channels/laravel/how-to-link-up-storage-files
+		<pre>cd C:\xampp\htdocs\fresh\public\
+mklink /D storage ..\storage\app\public</pre>
 	</li>
 </ul>
