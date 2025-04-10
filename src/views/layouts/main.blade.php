@@ -20,10 +20,14 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="{{ url(config('zenbolt.favicon.favicon-32x32')) }}">
 	<link rel="icon" type="image/png" sizes="96x96" href="{{ url(config('zenbolt.favicon.favicon-96x96')) }}">
 	<link rel="icon" type="image/png" sizes="16x16" href="{{ url(config('zenbolt.favicon.favicon-16x16')) }}">
-	<link rel="manifest" href="{{ url(config('zenbolt.favicon.manifest')) }}">
-	<meta name="msapplication-TileColor" content="{{ config('zenbolt.favicon.msapplication-TileColor') }}">
-	<meta name="msapplication-TileImage" content="{{ url(config('zenbolt.favicon.msapplication-TileImage')) }}">
-	<meta name="theme-color" content="{{ config('zenbolt.favicon.theme-color') }}">
+	@if(config('zenbolt.favicon.manifest'))
+	<link rel="manifest" href="{{ url(config('zenbolt.favicon.manifest')) }}"> @endif
+	@if(config('zenbolt.favicon.msapplication-TileColor'))
+	<meta name="msapplication-TileColor" content="{{ config('zenbolt.favicon.msapplication-TileColor') }}"> @endif
+	@if(config('zenbolt.favicon.msapplication-TileImage'))
+	<meta name="msapplication-TileImage" content="{{ url(config('zenbolt.favicon.msapplication-TileImage')) }}"> @endif
+	@if(config('zenbolt.favicon.theme-color'))
+	<meta name="theme-color" content="{{ config('zenbolt.favicon.theme-color') }}"> @endif
 
 	<!-- Styles -->
 	@foreach(config('zenbolt.cms_assets.styles') as $path)
@@ -45,7 +49,10 @@
 	@yield('main-content')
 
 	<script>
-		var CKEditorColors = {!! config('zenbolt.ckeditor') && config('zenbolt.ckeditor.colors') && count(config('zenbolt.ckeditor.colors')) ? '"' . implode(',', config('zenbolt.ckeditor.colors')) . '"' : 'null' !!};
+		var CKEditorColors = {
+			!!config('zenbolt.ckeditor') && config('zenbolt.ckeditor.colors') && count(config('zenbolt.ckeditor.colors')) ? '"'.implode(',', config('zenbolt.ckeditor.colors')).
+			'"' : 'null'!!
+		};
 	</script>
 
 	@foreach(config('zenbolt.cms_assets.scripts') as $path)
