@@ -57,7 +57,7 @@ Route::prefix(config('zenbolt.cms_route_prefix'))->middleware(['web', 'admin'])-
     Route::put('/cms-pages/{id}', 'Zenbolt\Cms\Controllers\CmsPagesController@update');
     Route::put('/cms-pages/custom/{id}', 'Zenbolt\Cms\Controllers\CmsPagesController@updateCustom');
     Route::delete('/cms-pages/{id}', 'Zenbolt\Cms\Controllers\CmsPagesController@destroy');
-    Route::post('/ckeditor/images', 'Zenbolt\ollers\CmsPageController@uploadCkeditorImages')->name('ckeditor-images');
+    Route::post('/ckeditor/images', 'Zenbolt\Cms\Controllers\CmsPageController@uploadCkeditorImages')->name('ckeditor-images');
 
     //Logs
     Route::get('/logs', 'Zenbolt\Cms\Controllers\CmsLogsController@index');
